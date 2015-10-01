@@ -1,0 +1,119 @@
+body {
+	background-color: #7AC5CD;
+	font-family: 'Karla', sans-serif;
+	text-rendering: optimizeLegibility;
+	box-sizing: border-box;
+}
+
+textarea:focus, input:focus, button:focus {
+    outline: 0;
+}
+
+h1 {
+	text-align: center;
+	color: #fff;
+}
+
+.left {
+	display: inline-block;
+	vertical-align: top;
+}
+
+.right {
+	display: inline-block;
+	vertical-align: top;
+}
+
+section {
+	background-color: #fff;
+	margin: 1rem;
+	border-radius: 3px;
+	width: 25rem;
+}
+
+.meal-details {
+	text-align: center;
+}
+
+.meal-form {
+	margin-top: 5rem;
+	margin-right: 2.5rem;
+	text-align: right;
+}
+
+label {
+	text-align: right;
+}
+
+.customer-charges {
+	display: inline-block;
+	text-align: center;
+}
+
+.earnings-info {
+	text-align: center;
+}
+
+.box-title {
+	background-color: #53868B;
+	color: #fff;
+	font-size: 1.25rem;
+	text-align: left;
+	padding: 1rem;
+	border-top-left-radius: 3px;
+	border-top-right-radius: 3px;
+}
+
+p {
+	padding: 0rem 1rem 1rem 1rem;
+	font-size: 1.1rem;
+}
+
+input {
+	padding: 0.5rem;
+	border: 2px solid #DCDCDC;
+	font-size: 1rem;
+	width: 5rem;
+	margin-right: 1.25rem;
+}
+
+input:focus {
+	border: 3px solid #DCDCDC;
+}
+
+button {
+	margin: 3rem 1rem 2rem 1rem;
+	padding: 1rem 2rem;
+	background-color: #53868B;
+	color: #fff;
+	font-family: 'Karla', sans-serif;
+	font-size: 1rem;
+	text-transform: uppercase;
+	border: none;
+	border-radius: 2px;
+	cursor: pointer;
+}
+
+button:hover {
+	opacity: 0.9;
+}
+
+.submit {
+	background-color: #73B1B7
+}
+
+.cancel {
+	background-color: #CD5C5C;
+}
+
+.reset {
+	margin: 0;
+	background-color: #CD3333;
+	position: fixed;
+    bottom: 10px;
+    right: 10px;
+}
+
+
+
+
