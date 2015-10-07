@@ -1,0 +1,9 @@
+<div class="app">
+	<section class="earnings-info">
+		<header class="box-title">My Earnings Info</header>
+		<p>Tip Total: {{staff.tips | currency}}</p>
+		<p>Meal Count: {{staff.meals}}</p>
+		<p>Average Tip Per Meal: {{staff.avgTips | currency}}</p>
+	</section>
+	<button class="reset" ng-click="reset()">Reset</button>
+</div>

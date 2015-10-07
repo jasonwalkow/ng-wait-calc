@@ -5,6 +5,49 @@ body {
 	box-sizing: border-box;
 }
 
+.app {
+	text-align: center;
+	margin: 1rem auto 1rem auto;
+}
+
+nav {
+	text-align: center;
+	color: #fff;
+	font-size: 1.25rem;
+}
+
+nav a {
+	color: #53868B;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+nav a:hover {
+	opacity: 0.9;
+	color: #CD3333;
+}
+
+.home-desc {
+	padding: 1rem;
+	margin: 3rem;
+	color: #313131;
+	background-color: #fff;
+	border-radius: 3px;
+}
+
+.new_meal {
+	border-left: 2px solid #53868B;
+	border-right: 2px solid #53868B;
+	padding-left: 1rem;
+	padding-right: 1rem;
+	margin-right: 1rem;
+	margin-left: 1rem;
+}
+
+.left {
+	text-align: center;
+}
+
 textarea:focus, input:focus, button:focus {
     outline: 0;
 }
@@ -12,16 +55,6 @@ textarea:focus, input:focus, button:focus {
 h1 {
 	text-align: center;
 	color: #fff;
-}
-
-.left {
-	display: inline-block;
-	vertical-align: top;
-}
-
-.right {
-	display: inline-block;
-	vertical-align: top;
 }
 
 section {
@@ -33,10 +66,11 @@ section {
 
 .meal-details {
 	text-align: center;
+	margin: 1rem auto 1rem auto;
 }
 
 .meal-form {
-	margin-top: 5rem;
+	margin-top: 2rem;
 	margin-right: 2.5rem;
 	text-align: right;
 }
@@ -46,12 +80,13 @@ label {
 }
 
 .customer-charges {
-	display: inline-block;
 	text-align: center;
+	margin: 1rem auto 1rem auto;
 }
 
 .earnings-info {
 	text-align: center;
+	margin: 1rem auto 1rem auto;
 }
 
 .box-title {
@@ -82,7 +117,7 @@ input:focus {
 }
 
 button {
-	margin: 3rem 1rem 2rem 1rem;
+	margin: 1rem 1rem 2rem 1rem;
 	padding: 1rem 2rem;
 	background-color: #53868B;
 	color: #fff;
@@ -109,10 +144,25 @@ button:hover {
 .reset {
 	margin: 0;
 	background-color: #CD3333;
-	position: fixed;
-    bottom: 10px;
-    right: 10px;
 }
+
+/*ANIMATE*/
+
+.animate-view-container { position:relative; min-height: 100%; }
+.animate-view.ng-enter,
+.animate-view.ng-leave {
+    transition:0.5s linear all;
+    position:absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    background:#eee;
+}
+.animate-view.ng-enter { opacity:0; z-index:100; }
+.animate-view.ng-enter.ng-enter-active { opacity:1; }
+.animate-view.ng-leave { opacity:1; z-index:99; }
+.animate-view.ng-leave.ng-leave-active { opacity:0; }
 
 
 

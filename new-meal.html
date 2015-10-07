@@ -1,0 +1,39 @@
+<div class="app" ng-controller="newMealCtrl">
+	<div class="left">
+		<section class="meal-details">
+			<header class="box-title">Enter the Meal Details</header>
+			<form name="mealDetails" class="meal-form" novalidate ng-submit="submit()">
+			<p>
+				<label for="base-price">Base Meal Price: $
+					<input type="number" name="base_price" ng-model="meal.base_price" required>
+				</label>
+			</p>
+			<p>
+				<label for="tax-rate">Tax Rate: %
+					<input type="number" name="tax_rate" ng-model="meal.tax_rate" required>
+				</label>
+			</p>
+			<p>
+				<label for="base-price">Tip Percentage: %
+					<input type="number" name="tip_percentage" ng-model="meal.tip_percentage" required>
+				</label>
+			</p>
+			<button name="mealDetails" type="submit" class="submit">Submit</button>
+			<button class="cancel" ng-click="cancel()">Cancel</button>
+			</form>
+			<div class="error" ng-if="mealDetails.$submitted && mealDetails.$invalid" ng-messages="mealDetails.$error">
+		        <span ng-show="mealDetails.base_price.$error.required">Enter a price (e.g. 35).</span>
+		        <span ng-show="mealDetails.tax_rate.$error.required">Enter a tax rate (e.g. 9.99).</span>
+		        <span ng-show="mealDetails.tip_percentage.$error.required">Enter a tip percentage (e.g. 20).</span>
+	      </div>
+		</section>
+	</div>
+	<div class="right">
+		<section class="customer-charges">
+			<header class="box-title">Customer Charges</header>
+			<p>Subtotal  {{customer.subtotal | currency}}</p>
+			<p>Tip  {{customer.tip | currency}}</p>
+			<p class="total">Total  {{customer.total | currency}}</p>
+		</section>
+	</div>
+</div>
