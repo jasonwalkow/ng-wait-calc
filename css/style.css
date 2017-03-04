@@ -83,6 +83,7 @@ label {
 .customer-charges {
 	text-align: center;
 	margin: 1rem auto 1rem auto;
+	max-width: 100%;
 }
 
 .earnings-info {
